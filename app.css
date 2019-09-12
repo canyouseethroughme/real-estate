@@ -18,11 +18,7 @@ nav {
   grid-template-columns: 4fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-  border-bottom: 1px solid black;
-}
-a {
-  text-decoration: none;
-  color: black;
+  border-bottom: 0.5px solid black;
 }
 nav > div:first-child {
   justify-self: start;
@@ -33,11 +29,20 @@ nav > div > a > img {
   height: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .active {
   color: red;
 }
 
 /* BODY */
+
+input.error {
+  background-color: rgba(198, 38, 65, 0.1);
+}
 
 /* FOOTER */
 
@@ -49,5 +54,5 @@ nav > div > a > img {
   bottom: 0;
   width: 100vw;
   height: 30px;
-  border-top: 1px solid black;
+  border-top: 0.5px solid black;
 }

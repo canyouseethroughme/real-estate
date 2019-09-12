@@ -15,4 +15,3 @@
         <div><a <?= ($active == 'homes') ? 'class="active"' : '' ?> href="homes.php">Homes</a></div>
         <div><a <?= ($active == 'login') ? 'class="active"' : '' ?> href="login.php">Login/Sign Up</a></div>
     </nav>
-</body>
