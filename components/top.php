@@ -13,5 +13,6 @@
     <nav>
         <div style="margin-left:10px"><a <?= ($active == 'homePage') ? 'class="active"' : '' ?> href="index.php"><img src="logo.png"></a></div>
         <div><a <?= ($active == 'homes') ? 'class="active"' : '' ?> href="homes.php">Homes</a></div>
-        <div><a <?= ($active == 'login') ? 'class="active"' : '' ?> href="login.php">Login/Sign Up</a></div>
+        <div><a <?= ($active == 'signup') ? 'class="active"' : '' ?> href="signup.php">Sign Up</a></div>
+        <div><a <?= ($active == 'login') ? 'class="active"' : '' ?> href="login.php">Login</a></div>
     </nav>

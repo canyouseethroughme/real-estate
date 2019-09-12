@@ -1,6 +1,6 @@
-<script src="validate.js"></script>
-<script src="login.js"></script>
-<script src="signup.js"></script>
+<script src="scripts/validate.js"></script>
+<script src="scripts/login.js"></script>
+<script src="scripts/signup.js"></script>
 </body>
 <div class="bottom">
     <h4>

@@ -2,6 +2,8 @@
 
 $active = 'homes';
 
+session_start();
+
 require_once(__DIR__ . '/components/top.php');
 ?>
 
