@@ -16,7 +16,6 @@ require_once(__DIR__ . '/components/top.php');
     </div>
 </div>
 
-<form method="POST"></form>
 
 <?php
 require_once(__DIR__ . '/components/bottom.php');

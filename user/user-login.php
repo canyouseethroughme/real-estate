@@ -2,26 +2,27 @@
 
 
 session_start();
+
 $sjUsers = file_get_contents(__DIR__ . '/../data/data.json');
-// echo $sjUsers;
 $jUsers = json_decode($sjUsers);
-// if ($_POST) {
-//     foreach ($jUsers as $jUser) {
-//         $jUser->email = $_POST['emailLogin'];
-//         $jUser->password = $_POST['passwordLogin'];
-//     }
-// }
+
+
 if ($_POST) {
     $sEmail = $_POST['emailLogin'];
     $sPassword = $_POST['passwordLogin'];
-    foreach ($jUsers as $jUser) {
 
+    foreach ($jUsers->users as $userId => $jUser) {
         if (
             $jUser->email == $sEmail &&
             $jUser->password == $sPassword
         ) {
+            session_start();
+            $_SESSION['jUser'] = $jUser;
 
-            header('Location: /profile.php');
+            header('Location: ../profile.php');
+            exit;
+        } else {
+            header('Location: ../login.php');
         }
     }
 }

@@ -1,15 +1,13 @@
 <?php
 
-$active = 'login';
+$active = 'signup';
 
 require_once(__DIR__ . '/components/top.php');
 
-session_start();
-if ($_SESSION) {
+if ($_SESSION['jUser']->email) {
     echo "Hi {$_SESSION['jUser']->name}. Your email address is {$_SESSION['jUser']->email}";
-    echo '<a href="user/user-logout.php">Logout</a>';
 } else {
-    header('Location: /../login.php');
+    header('Location: ./login.php');
 }
 ?>
 

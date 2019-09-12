@@ -6,7 +6,7 @@ require_once(__DIR__ . '/components/top.php');
 
 session_start();
 
-if ($_SESSION) {
+if ($_SESSION['jUser']->email) {
     header('Location: profile.php');
 }
 

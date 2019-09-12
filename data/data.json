@@ -1,4 +1,60 @@
 {
-  "U1": { "name": "A", "email": "a@a.com", "password": "a1passs" },
-  "U2": { "name": "B", "email": "b@b.com", "password": "b2passs" }
+    "users": {
+        "b4a004b4db4cece9574b03ea6f13af9f": {
+            "name": "asdf",
+            "lastName": "asdf",
+            "password": "123456",
+            "email": "eu@eu.com",
+            "activationKey": "4fc1b9d2",
+            "verified": 0
+        },
+        "3359feb162ae8a7e5e3e677818d7f9db": {
+            "name": "asdasd",
+            "lastName": "asdasd",
+            "password": "asdfff",
+            "email": "asdasdasda@xxx.com",
+            "activationKey": "72cc73bb",
+            "verified": 0
+        },
+        "b5d6017776492701c14737b332c6bcb3": {
+            "name": "alosam",
+            "lastName": "alosami",
+            "password": "alosami",
+            "email": "alo@alo.com",
+            "activationKey": "b5a5af2f",
+            "verified": 0
+        },
+        "afeb8114e852d4b15138728d7999ad13": {
+            "name": "Andrei",
+            "lastName": "Atudorei",
+            "password": "alosam",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "8ef6c264",
+            "verified": 0
+        },
+        "fcb826f0ff57ef68c8f30487875cacda": {
+            "name": "Christian",
+            "lastName": "Reeder",
+            "password": "parolamea",
+            "email": "cr@cr.com",
+            "activationKey": "f44f9076",
+            "verified": 0
+        },
+        "7a3449ebc0887a5031b8b585df10aac5": {
+            "name": "costel",
+            "lastName": "costelus",
+            "password": "parolamea",
+            "email": "as@as.com",
+            "activationKey": "5ba27d99",
+            "verified": 0
+        },
+        "b0bb1a245f74626b310cad6c49d2632c": {
+            "name": "Andrei",
+            "lastName": "Atudorei",
+            "password": "amparola",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "178c009e",
+            "verified": 0
+        }
+    }
 }
