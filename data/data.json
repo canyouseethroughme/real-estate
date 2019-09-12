@@ -55,6 +55,14 @@
             "email": "stefandrei123@gmail.com",
             "activationKey": "178c009e",
             "verified": 0
+        },
+        "f2a730bfdeed7462be4864b63c1d6ee0": {
+            "name": "salam",
+            "lastName": "salam",
+            "password": "amcasa",
+            "email": "alo@alo.com",
+            "activationKey": "fca4b478",
+            "verified": 0
         }
     }
 }
