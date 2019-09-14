@@ -19,6 +19,9 @@ if ($_SESSION['jUser']->email) {
         <input name="emailLogin" type="text" maxlength="345" data-type="email">
         <h5>Password</h5>
         <input name="passwordLogin" type="password" maxlength="20" data-type="string" data-min="6" data-max="20">
+        <br>
+        <label for="isAgent">As agent</label>
+        <input id="isAgent" name="isAgent" type="checkbox">
     </div>
     <button id="btnLogin" onclick="return login(this)" data-start="LOGIN" data-wait="Connecting ...">
         Login

@@ -1,67 +1,41 @@
 {
     "users": {
         "b4a004b4db4cece9574b03ea6f13af9f": {
-            "name": "asdf",
-            "lastName": "asdf",
-            "password": "123456",
+            "name": "Andrei",
+            "lastName": "Atusss",
             "email": "eu@eu.com",
-            "activationKey": "4fc1b9d2",
+            "password": "123456",
+            "activationKey": "7803a555",
             "verified": 0
         },
-        "3359feb162ae8a7e5e3e677818d7f9db": {
-            "name": "asdasd",
-            "lastName": "asdasd",
-            "password": "asdfff",
-            "email": "asdasdasda@xxx.com",
-            "activationKey": "72cc73bb",
-            "verified": 0
+        "d6b3347cca82fa198a71d9021fcde112": {
+            "name": "demosd",
+            "lastName": "demo1ds",
+            "password": "counter",
+            "email": "demo@demo.com",
+            "activationKey": "cf32fea6",
+            "verified": 0,
+            "id": "d6b3347cca82fa198a71d9021fcde112"
+        }
+    },
+    "agents": {
+        "0c697c2e75683095233c904a9aff777e": {
+            "name": "asdadsa",
+            "lastName": "Atu",
+            "password": "123456",
+            "email": "el@el.com",
+            "phoneNumber": "52225585",
+            "activationKey": "4040e9f0",
+            "verified": 0,
+            "id": "0c697c2e75683095233c904a9aff777e"
         },
-        "b5d6017776492701c14737b332c6bcb3": {
-            "name": "alosam",
-            "lastName": "alosami",
-            "password": "alosami",
-            "email": "alo@alo.com",
-            "activationKey": "b5a5af2f",
-            "verified": 0
-        },
-        "afeb8114e852d4b15138728d7999ad13": {
-            "name": "Andrei",
-            "lastName": "Atudorei",
-            "password": "alosam",
-            "email": "stefandrei123@gmail.com",
-            "activationKey": "8ef6c264",
-            "verified": 0
-        },
-        "fcb826f0ff57ef68c8f30487875cacda": {
-            "name": "Christian",
-            "lastName": "Reeder",
-            "password": "parolamea",
-            "email": "cr@cr.com",
-            "activationKey": "f44f9076",
-            "verified": 0
-        },
-        "7a3449ebc0887a5031b8b585df10aac5": {
-            "name": "costel",
-            "lastName": "costelus",
-            "password": "parolamea",
-            "email": "as@as.com",
-            "activationKey": "5ba27d99",
-            "verified": 0
-        },
-        "b0bb1a245f74626b310cad6c49d2632c": {
-            "name": "Andrei",
-            "lastName": "Atudorei",
-            "password": "amparola",
-            "email": "stefandrei123@gmail.com",
-            "activationKey": "178c009e",
-            "verified": 0
-        },
-        "f2a730bfdeed7462be4864b63c1d6ee0": {
-            "name": "salam",
-            "lastName": "salam",
-            "password": "amcasa",
-            "email": "alo@alo.com",
-            "activationKey": "fca4b478",
+        "c0bd707e3a08dbe677f09d76db156f16": {
+            "name": "agent",
+            "lastName": "agent1",
+            "password": "counter",
+            "email": "agent@agent.com",
+            "phoneNumber": "52225585",
+            "activationKey": "3360cf7b",
             "verified": 0
         }
     }

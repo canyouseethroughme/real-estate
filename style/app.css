@@ -50,7 +50,7 @@ nav > div > a:hover {
 /* BODY */
 
 input.error {
-  background-color: rgba(198, 38, 65, 0.1);
+  background-color: #c62641;
 }
 
 /* MAP & PROPERTIES */

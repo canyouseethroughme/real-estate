@@ -1,5 +1,7 @@
 <?php
 
+include(__DIR__ . '/../functions/functions.php');
+
 $sUserName = $_POST['txtFirstName'];
 $sUserLastName = $_POST['txtLastName'];
 $sUserPassword = $_POST['txtPassword'];
@@ -8,7 +10,7 @@ $sUserEmail = $_POST['txtEmail'];
 if (
     empty($sUserName) || empty($sUserLastName) || empty($sUserPassword) || empty($sUserEmail)
 ) {
-    echo 'empty inputs';
+
     exit;
 }
 
@@ -18,7 +20,7 @@ if (
     !filter_var($sUserEmail, FILTER_VALIDATE_EMAIL) ||
     !(strlen($sUserPassword) >= 6 && strlen($sUserPassword) <= 20)
 ) {
-    echo 'check credentials';
+
     exit;
 }
 

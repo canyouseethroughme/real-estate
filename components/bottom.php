@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     const sjProperties = '<?php echo json_encode($jProperties); ?>'
     ajProperties = JSON.parse(sjProperties) // convert text into an object
@@ -43,7 +44,7 @@
     }
 </script>
 
-
+<script src="scripts/script.js"></script>
 <script src="scripts/validate.js"></script>
 <script src="scripts/login.js"></script>
 <script src="scripts/signup.js"></script>
