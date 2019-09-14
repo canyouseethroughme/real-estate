@@ -31,4 +31,16 @@ $("#btnEditUser").click(function() {
 });
 // ===================
 
-// DELETE USER
+// DELETE PROFILE
+
+function deleteProfile(oBtn) {
+  $(oBtn)
+    .parent()
+    .remove();
+
+  $.ajax({
+    url: "user/api-delete-profile.php"
+  }).done(function() {
+    window.location = "signup.php";
+  });
+}

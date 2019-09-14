@@ -1,42 +1,23 @@
 {
-    "users": {
-        "b4a004b4db4cece9574b03ea6f13af9f": {
-            "name": "Andrei",
-            "lastName": "Atusss",
-            "email": "eu@eu.com",
-            "password": "123456",
-            "activationKey": "7803a555",
-            "verified": 0
-        },
-        "d6b3347cca82fa198a71d9021fcde112": {
-            "name": "demosd",
-            "lastName": "demo1ds",
-            "password": "counter",
-            "email": "demo@demo.com",
-            "activationKey": "cf32fea6",
-            "verified": 0,
-            "id": "d6b3347cca82fa198a71d9021fcde112"
-        }
-    },
-    "agents": {
-        "0c697c2e75683095233c904a9aff777e": {
-            "name": "asdadsa",
-            "lastName": "Atu",
-            "password": "123456",
-            "email": "el@el.com",
-            "phoneNumber": "52225585",
-            "activationKey": "4040e9f0",
-            "verified": 0,
-            "id": "0c697c2e75683095233c904a9aff777e"
-        },
-        "c0bd707e3a08dbe677f09d76db156f16": {
-            "name": "agent",
-            "lastName": "agent1",
-            "password": "counter",
-            "email": "agent@agent.com",
-            "phoneNumber": "52225585",
-            "activationKey": "3360cf7b",
-            "verified": 0
-        }
+  "users": {
+    "3889797b8cb15712d21329ca0420fbf6": {
+      "name": "Andrei",
+      "lastName": "Atudorei",
+      "password": "123456",
+      "email": "user@user.com",
+      "activationKey": "43191d26",
+      "verified": 0
     }
+  },
+  "agents": {
+    "c0bd707e3a08dbe677f09d76db156f16": {
+      "name": "agent",
+      "lastName": "agent1",
+      "password": "123456",
+      "email": "agent@agent.com",
+      "phoneNumber": "52225585",
+      "activationKey": "3360cf7b",
+      "verified": 0
+    }
+  }
 }
