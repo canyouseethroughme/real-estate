@@ -30,6 +30,7 @@ $("#btnEditUser").click(function() {
     });
 });
 // ===================
+// ===================
 
 // DELETE PROFILE
 
@@ -44,3 +45,19 @@ function deleteProfile(oBtn) {
     window.location = "signup.php";
   });
 }
+
+// ===================
+// ===================
+
+// DISABLE CHECKBOX FOR LOGIN --- USER OR AGENT
+$("#isUser").change(function() {
+  if ($(this).is(":checked")) {
+    $("#isAgent").attr("disabled", true);
+  }
+});
+
+$("#isAgent").change(function() {
+  if ($(this).is(":checked")) {
+    $("#isUser").attr("disabled", true);
+  }
+});

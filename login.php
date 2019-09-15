@@ -12,22 +12,26 @@ if ($_SESSION['jUser']->email) {
 
 
 ?>
+<div class="divLogin">
+    <form method="POST" id="frmLogin" action="user/user-login.php">
+        <div class="loginSpan"><label><span> Login</span></label><br>
+            <input id="isUser" type="checkbox" style="width:10px; margin: 25px 0 10px 0">
+            <label>as user</label>
 
-<form method="POST" id="frmLogin" action="user/user-login.php">
-    <div>
-        <h5>Email</h5>
-        <input name="emailLogin" type="text" maxlength="345" data-type="email">
-        <h5>Password</h5>
-        <input name="passwordLogin" type="password" maxlength="20" data-type="string" data-min="6" data-max="20">
-        <br>
-        <label for="isAgent">As agent</label>
-        <input id="isAgent" name="isAgent" type="checkbox">
-    </div>
-    <button id="btnLogin" onclick="return login(this)" data-start="LOGIN" data-wait="Connecting ...">
-        Login
-    </button>
+            <input id="isAgent" name="isAgent" type="checkbox" style="width:10px">
+            <label for="isAgent">or agent</label>
+        </div>
+        <label>Email</label>
+        <input name="emailLogin" type="text" maxlength="345" data-type="email" placeholder="Type registered email address">
+        <label>Password</label>
+        <input name="passwordLogin" type="password" maxlength="20" data-type="string" data-min="6" data-max="20" placeholder="Type password">
 
-</form>
+        <button id="btnLogin" onclick="return login(this)" data-start="LOGIN" data-wait="Connecting ...">
+            Login
+        </button>
 
+
+    </form>
+</div>
 <?php
 require_once(__DIR__ . '/components/bottom.php');

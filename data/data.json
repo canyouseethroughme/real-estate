@@ -1,23 +1,32 @@
 {
-  "users": {
-    "3889797b8cb15712d21329ca0420fbf6": {
-      "name": "Andrei",
-      "lastName": "Atudorei",
-      "password": "123456",
-      "email": "user@user.com",
-      "activationKey": "43191d26",
-      "verified": 0
+    "users": {
+        "3889797b8cb15712d21329ca0420fbf6": {
+            "name": "Andrei",
+            "lastName": "Nue",
+            "password": "123456",
+            "email": "user@user.com",
+            "activationKey": "43191d26",
+            "verified": 0,
+            "id": "3889797b8cb15712d21329ca0420fbf6"
+        },
+        "a23c6917610618a059fa9d387bd09d96": {
+            "name": "Christian",
+            "lastName": "Reeder",
+            "password": "counter",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "2bbaceb2",
+            "verified": 0
+        }
+    },
+    "agents": {
+        "c0bd707e3a08dbe677f09d76db156f16": {
+            "name": "agent",
+            "lastName": "agent1",
+            "password": "123456",
+            "email": "agent@agent.com",
+            "phoneNumber": "52225585",
+            "activationKey": "3360cf7b",
+            "verified": 0
+        }
     }
-  },
-  "agents": {
-    "c0bd707e3a08dbe677f09d76db156f16": {
-      "name": "agent",
-      "lastName": "agent1",
-      "password": "123456",
-      "email": "agent@agent.com",
-      "phoneNumber": "52225585",
-      "activationKey": "3360cf7b",
-      "verified": 0
-    }
-  }
 }

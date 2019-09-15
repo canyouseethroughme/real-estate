@@ -9,6 +9,9 @@ body {
   height: 100vh;
 }
 
+/* ============================= */
+/* ============================= */
+
 /* NAVIGATION */
 
 nav {
@@ -46,12 +49,83 @@ nav > div > a:hover {
 .active {
   color: #0274e3;
 }
+/* ============================= */
+/* ============================= */
 
 /* BODY */
 
-input.error {
-  background-color: #c62641;
+/* ============================= */
+/* ============================= */
+
+/* FORM LOGIN */
+.divLogin {
+  width: 100%;
+  height: calc(100vh - 90px);
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
+
+#frmLogin {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  margin-top: -120px;
+}
+
+#frmLogin > div > label,
+#frmLogin > label {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+#frmLogin > div > label > span {
+  color: #0274e3;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.loginSpan {
+  width: 200px;
+  text-align: center;
+}
+
+input.error {
+  border-bottom: 1px solid #a4031f;
+}
+
+input {
+  width: 250px;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #0274e3;
+}
+
+button {
+  background-color: #0c459e;
+  border: none;
+  color: white;
+  width: 250px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  color: #0c459e;
+  background-color: white;
+  border: 1px solid #0c459e;
+}
+
+/* ============================= */
+/* ============================= */
 
 /* MAP & PROPERTIES */
 
@@ -69,6 +143,9 @@ input.error {
 .activeProperty {
   box-shadow: 0px 0px 5px 10px green;
 }
+
+/* ============================= */
+/* ============================= */
 
 /* FOOTER */
 
@@ -88,3 +165,6 @@ input.error {
   font-size: 14px;
   font-weight: 400;
 }
+
+/* ============================= */
+/* ============================= */
