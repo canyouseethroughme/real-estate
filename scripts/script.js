@@ -89,6 +89,7 @@ function setEditListeners() {
         'input[data-type="propertyBth"]'
       );
       const $sqmInput = $parentDiv.children('input[data-type="propertySqm"]');
+      const $zipInput = $parentDiv.children('input[data-type="propertyZip"]');
       const $imageInput = $parentDiv.children('input[type="file"]');
       const $image = $parentDiv.children("img");
 
@@ -96,6 +97,7 @@ function setEditListeners() {
       var newPropertyBeds = $bedsInput.val();
       var newPropertyBth = $bathroomsInput.val();
       var newPropertySqm = $sqmInput.val();
+      var newPropertyZip = $zipInput.val();
 
       var newPropertyImage;
       if ($imageInput[0] && $imageInput[0].files) {
@@ -108,6 +110,7 @@ function setEditListeners() {
       data.set("bedrooms", newPropertyBeds);
       data.set("bathrooms", newPropertyBth);
       data.set("sqm", newPropertySqm);
+      data.set("zip", newPropertyZip);
       if (newPropertyImage) {
         data.set("image", newPropertyImage);
       }
@@ -120,9 +123,6 @@ function setEditListeners() {
         data
       })
         .done(function(res) {
-          console.log("====================================");
-          console.log("res:", res);
-          console.log("====================================");
           const { imageUrl } = JSON.parse(res);
           $image.attr("src", imageUrl);
           $imageInput.val("");
@@ -150,17 +150,10 @@ function setDeleteListeners() {
         data: { id: propertyId }
       })
         .done(function(res) {
-          console.log("====================================");
-          console.log("res:", res);
-          console.log("====================================");
           const $parentDiv = $("#" + propertyId);
           $parentDiv.remove();
         })
-        .fail(err => {
-          console.log("====================================");
-          console.log("error:", err.responseText);
-          console.log("====================================");
-        });
+        .fail();
     });
   }
 }
@@ -173,6 +166,7 @@ $("#btnAddProperty").click(function() {
   var newPropertyBeds = $("#bedsInput").val();
   var newPropertyBth = $("#bthInput").val();
   var newPropertySqm = $("#sqmInput").val();
+  var newPropertyZip = $("#zipInput").val();
   var newPropertyImage = $("#imageInput")[0].files[0];
 
   const data = new FormData();
@@ -180,6 +174,7 @@ $("#btnAddProperty").click(function() {
   data.set("bedrooms", newPropertyBeds);
   data.set("bathrooms", newPropertyBth);
   data.set("sqm", newPropertySqm);
+  data.set("zip", newPropertyZip);
   data.set("image", newPropertyImage);
 
   $.ajax({
@@ -190,7 +185,7 @@ $("#btnAddProperty").click(function() {
     data
   })
     .done(function(res) {
-      const { id, price, beds, bath, sqm, imageUrl } = JSON.parse(res);
+      const { id, price, beds, bath, sqm, zip, imageUrl } = JSON.parse(res);
 
       var divNewProperty = `
         <div id="${id}" class="newProperty">
@@ -200,6 +195,7 @@ $("#btnAddProperty").click(function() {
           <input data-type="propertyBeds" type="text" value="${beds}">
           <input data-type="propertyBth" type="text" value="${bath}">
           <input data-type="propertySqm" type="text" value="${sqm}">
+          <input data-type="propertyZip" type="text" value="${zip}">
           <button type="button" class="edit-property-btn" data-target="${id}">Edit</button>
           <button type="button" class="delete-property-btn" data-target="${id}">Delete</button>
         </div>`;

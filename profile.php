@@ -41,14 +41,16 @@ if ($_SESSION['jUser']->isAgent) :
         <form id="frmLogin">
             <h2 class="uploadPropsLabel"> Upload properties</h2>
             <h3 style="margin-bottom: 15px;">Use the form bellow to upload properties.</h3>
-            <label for=" priceInput"></label>
-            <input name="price" id="priceInput" type="text" placeholder="Property price" maxlength="9" data-type="integer" data-min="500000" data-max="999999999">
-            <label for="bedsInput"></label>
+            <label for=" priceInput">Price</label>
+            <input name="price" id="priceInput" type="text" placeholder="Property price" maxlength="9" data-type="integer" data-min="50000" data-max="999999999">
+            <label for="bedsInput">Bedrooms</label>
             <input name="bedrooms" id="bedsInput" type="text" placeholder="Property no. of bedrooms" maxlength="3" data-type="integer" data-min="1" data-max="15">
-            <label for="bthInput"></label>
+            <label for="bthInput">Bathrooms</label>
             <input name="bathrooms" id="bthInput" type="text" placeholder="Property no. of bathrooms" maxlength="3" data-type="integer" data-min="1" data-max="10">
-            <label for="sqmInput"></label>
+            <label for="sqmInput">Square meters</label>
             <input name="sqm" id="sqmInput" type="text" placeholder="Property sqm" maxlength="20" data-type="integer" data-min="40" data-max="9999">
+            <label for="zipInput">ZIP code</label>
+            <input name="zip" id="zipInput" type="text" placeholder="Property ZIP code" maxlength="5" data-type="integer" data-min="3" data-max="99999">
             <label for="imageInput"></label>
             <input name="image" type="file" id="imageInput">
             <button type="button" id="btnAddProperty">Upload property</button>
@@ -68,10 +70,16 @@ if ($_SESSION['jUser']->isAgent) :
             <div id="<?= $propertyId ?>" class="newProperty">
                 <img src="<?= $property->imageUrl ?>">
                 <input name="image" type="file">
+                <label>Price</label>
                 <input data-type="propertyPrice" type="text" value="<?= $property->price ?>">
+                <label>Bedrooms</label>
                 <input data-type="propertyBeds" type="text" value="<?= $property->beds ?>">
+                <label>Bathrooms</label>
                 <input data-type="propertyBth" type="text" value="<?= $property->bath ?>">
+                <label>Square meters</label>
                 <input data-type="propertySqm" type="text" value="<?= $property->sqm ?>">
+                <label>ZIP code</label>
+                <input data-type="propertyZip" type="text" value="<?= $property->zip ?>">
                 <button type="button" class="edit-property-btn" data-target="<?= $propertyId ?>">Edit</button>
                 <button type="button" class="delete-property-btn" data-target="<?= $propertyId ?>">Delete</button>
             </div>

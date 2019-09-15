@@ -106,5 +106,96 @@
             "verified": 0
         }
     },
-    "properties": {}
+    "properties": {
+        "5d7e72a19265d": {
+            "id": "5d7e72a19265d",
+            "price": "500000",
+            "beds": "10",
+            "bath": "3",
+            "sqm": "300",
+            "zip": "2300",
+            "imageUrl": "agent\/images\/5d7e72a192557.jpg"
+        },
+        "5d7e72bfa2853": {
+            "id": "5d7e72bfa2853",
+            "price": "300000",
+            "beds": "7",
+            "bath": "2",
+            "sqm": "200",
+            "zip": "3100",
+            "imageUrl": "agent\/images\/5d7e72bfa2734.jpg"
+        },
+        "5d7e72d8df60e": {
+            "id": "5d7e72d8df60e",
+            "price": "600000",
+            "beds": "9",
+            "bath": "3",
+            "sqm": "400",
+            "zip": "1400",
+            "imageUrl": "agent\/images\/5d7e72d8df3b1.jpg"
+        },
+        "5d7e72ee93da0": {
+            "id": "5d7e72ee93da0",
+            "price": "550000",
+            "beds": "5",
+            "bath": "3",
+            "sqm": "200",
+            "zip": "4000",
+            "imageUrl": "agent\/images\/5d7e72ee93cd7.jpg"
+        },
+        "5d7e74325021d": {
+            "id": "5d7e74325021d",
+            "price": "400000",
+            "beds": "8",
+            "bath": "3",
+            "sqm": "350",
+            "zip": "5600",
+            "imageUrl": "agent\/images\/5d7e74325016f.jpg"
+        },
+        "5d7e75790cd28": {
+            "id": "5d7e75790cd28",
+            "price": "900000",
+            "beds": "11",
+            "bath": "4",
+            "sqm": "500",
+            "zip": "3200",
+            "imageUrl": "agent\/images\/5d7e75790cc94.jpg"
+        },
+        "5d7e7590edaf4": {
+            "id": "5d7e7590edaf4",
+            "price": "670000",
+            "beds": "14",
+            "bath": "4",
+            "sqm": "670",
+            "zip": "4600",
+            "imageUrl": "agent\/images\/5d7e7590ed83a.jpg"
+        },
+        "5d7e75b35e2cd": {
+            "id": "5d7e75b35e2cd",
+            "price": "450000",
+            "beds": "15",
+            "bath": "6",
+            "sqm": "725",
+            "zip": "4350",
+            "imageUrl": "agent\/images\/5d7e75b35e23e.jpg"
+        },
+        "5d7e75d6399e4": {
+            "id": "5d7e75d6399e4",
+            "price": "320000",
+            "beds": "9",
+            "bath": "2",
+            "sqm": "200",
+            "zip": "1700",
+            "imageUrl": "agent\/images\/5d7e75d63994e.jpg"
+        },
+        "5d7e8bbad1777": {
+            "id": "5d7e8bbad1777",
+            "price": "403000",
+            "beds": "9",
+            "bath": "4",
+            "sqm": "230",
+            "zip": "3500",
+            "imageUrl": "agent\/images\/5d7e8bbad1691.jpg"
+        }
+    }
 }

@@ -5,10 +5,11 @@ $propertyBeds = $_POST['bedrooms'];
 $propertyBath = $_POST['bathrooms'];
 $propertySqm = $_POST['sqm'];
 $propertyImage = $_FILES['image'];
+$propertyZip = $_POST['zip'];
 
 if (
     empty($propertyPrice) || empty($propertyBeds) || empty($propertyBath) || empty($propertySqm) ||
-    empty($propertyImage)
+    empty($propertyImage) || empty($propertyZip)
 ) {
     http_response_code(400);
     echo 'Missing required fields';
@@ -35,6 +36,7 @@ $property->price = $propertyPrice;
 $property->beds = $propertyBeds;
 $property->bath = $propertyBath;
 $property->sqm = $propertySqm;
+$property->zip = $propertyZip;
 $property->imageUrl = "agent/images/$imageName.$ext";
 
 $jData->properties->$propertyId = $property;
