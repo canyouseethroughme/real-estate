@@ -213,44 +213,60 @@ $("#btnAddProperty").click(function() {
 
 // SEARCH
 
-// function checkSearch() {
-//   if ($("#txtSearch").val().length < 2) {
-//     $("#txtSearch").addClass("error");
-//   }
-// }
-// const txtSearch = document.querySelector("#txtSearch");
-// const divResults = document.querySelector("#results");
-// txtSearch.addEventListener("input", function() {
-//   if ($("#txtSearch").val().length == 0) {
-//     $("#txtSearch").removeClass("error");
-//     $("#results").hide();
-//     return;
-//   }
-//   if ($("#txtSearch").val() < 2) {
-//     $("#txtSearch").addClass("error");
-//     return;
-//   }
+function checkSearch() {
+  if ($("#txtSearch").val().length < 2) {
+    $("#txtSearch").addClass("error");
+  }
+}
+const txtSearch = document.querySelector("#txtSearch");
+const divResults = document.querySelector("#results");
+$("#txtSearch").on("input", function() {
+  if ($("#txtSearch").val().length == 0) {
+    $("#txtSearch").removeClass("error");
+    $("#results").hide();
+    return;
+  }
+  // if ($("#txtSearch").val() < 2) {
+  //   $("#txtSearch").addClass("error");
+  //   return;
+  // }
 
-//   $.ajax({
-//     url: "user/api-search.php",
-//     data: $("#frmSearch").serialize(),
-//     dataType: "JSON"
-//   }).done(function(matches) {
-//     $("#results").empty();
+  $.ajax({
+    url: "user/api-search.php",
+    data: $("#searchForm").serialize()
+    // dataType: "JSON"
+  })
+    .done(function(matches) {
+      console.log("====================================");
+      console.log("res:", matches);
+      console.log("====================================");
+      const resultList = JSON.parse(matches);
 
-//     $(matches).each(function(index, zip) {
-//       zip = zip.replace(/</g, "&lt;");
-//       zip = zip.replace(/>/g, "&lt;");
-//       let divZip = `<div><a href="homes.php">${zip}</a></div>`;
-//       $("#results").append(divZip);
-//     });
-//   });
-//   if (txtSearch.value.length == 0) {
-//     divResults.style.display = "none";
-//   } else {
-//     divResults.style.display = "grid";
-//   }
-// });
+      $("#results").empty();
+      resultList.forEach(result => {
+        $("#results").append(`
+          <div><a href="homes.php">${result.zip}</a></div>
+        `);
+      });
+      // $(matches).each(function(index, zip) {
+      //   zip = zip.replace(/</g, "&lt;");
+      //   zip = zip.replace(/>/g, "&lt;");
+      //   let divZip = `<div><a href="homes.php">${zip}</a></div>`;
+      //   $("#results").append(divZip);
+      // });
+    })
+    .fail(function(error) {
+      console.log("====================================");
+      console.log("err:", error.responseText);
+      console.log("====================================");
+    });
+
+  if (txtSearch.value.length == 0) {
+    divResults.style.display = "none";
+  } else {
+    divResults.style.display = "grid";
+  }
+});
 
 // ===================
 // ===================

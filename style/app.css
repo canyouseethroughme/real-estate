@@ -55,48 +55,66 @@ nav > div > a:hover {
 /* BODY */
 
 #home {
-  background-image: url("../home.png");
+  background-image: url("../home.jpg");
   background-size: cover;
+  width: 100vw;
   height: calc(100vh - 90px);
   background-position: 50% 50%;
-}
-
-/* ============================= */
-/* ============================= */
-
-/* HOMES */
-
-.mapProperties {
-  overflow: hidden;
-}
-
-.properties {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  overflow-x: scroll;
-  margin: 10px;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
-.propertyDiv > img {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-}
-.propertyRow > div:first-child {
-  font-weight: bold;
-}
-.propertyRow {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
+#home > div {
+  text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: 500;
+  position: absolute;
+  top: 220px;
+  left: calc(100vw / 2 - 305px);
+}
+
+#home > div > h3 {
+  font-size: 24px;
+  color: #003049;
+}
+
+#btnSearch {
+  margin: 0;
+  background-color: #fcbf49;
+  color: #003049;
+}
+
+#btnSearch:hover {
+  background-color: #f7cd79;
+  border: none;
+  transition: 0.5s;
+}
+
+#searchForm > input {
+  height: 35px;
+  border: none;
+}
+#searchForm > input::placeholder {
+  padding-left: 10px;
+}
+
+#results {
+  height: 150px;
+  width: 150px;
+}
+#results > div > a {
+  color: #003049;
+  font-size: 20px;
 }
 
 /* ============================= */
 /* ============================= */
 
 /* FORM LOGIN */
+
 .divLogin,
 .containerUpdate,
 .containerProfile {
@@ -217,10 +235,35 @@ button:hover {
   height: calc(100vh - 90px);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 }
 
 .map {
   border: 1px solid #bcbcbd;
+}
+
+.properties {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  overflow-x: scroll;
+  margin: 10px;
+}
+
+.propertyDiv > img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+.propertyRow > div:first-child {
+  font-weight: bold;
+}
+.propertyRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #1a4262;
 }
 
 .activeProperty {
