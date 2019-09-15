@@ -56,6 +56,22 @@
             "email": "stefandrei123@gmail.com",
             "activationKey": "20613060",
             "verified": 1
+        },
+        "da64ef569061cec3da9d38b3cb1a64db": {
+            "name": "tavi",
+            "lastName": "eusebiu",
+            "password": "123456",
+            "email": "parkerplane@yahoo.com",
+            "activationKey": "eaecc2e6",
+            "verified": 0
+        },
+        "d5618cdd90f06d78e84c566e6bad6bec": {
+            "name": "balu",
+            "lastName": "basa",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "9f380391",
+            "verified": 1
         }
     },
     "agents": {
@@ -104,12 +120,21 @@
             "phoneNumber": "52225585",
             "activationKey": "7414a184",
             "verified": 0
+        },
+        "4fc4a8020962d216c6eacd94cf6bc81e": {
+            "name": "Andrei",
+            "lastName": "Atudorei",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "phoneNumber": "52225585",
+            "activationKey": "ef4888b8",
+            "verified": 1
         }
     },
     "properties": {
         "5d7e72a19265d": {
             "id": "5d7e72a19265d",
-            "price": "500000",
+            "price": "745000",
             "beds": "10",
             "bath": "3",
             "sqm": "300",

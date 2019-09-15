@@ -57,7 +57,7 @@ if ($_SESSION['jUser']->isAgent) :
 
         </form>
     </div>
-
+    <h2 class="uploadPropsLabel" style="text-align:center;">Update properties</h2>
     <div id="properties">
         <?php
             $sjData = file_get_contents(__DIR__ . '/data/data.json');
@@ -66,6 +66,7 @@ if ($_SESSION['jUser']->isAgent) :
 
             foreach ($jDataProperties as $propertyId => $property) {
                 ?>
+
 
             <div id="<?= $propertyId ?>" class="newProperty">
                 <img src="<?= $property->imageUrl ?>">
@@ -80,9 +81,10 @@ if ($_SESSION['jUser']->isAgent) :
                 <input data-type="propertySqm" type="text" value="<?= $property->sqm ?>">
                 <label>ZIP code</label>
                 <input data-type="propertyZip" type="text" value="<?= $property->zip ?>">
-                <button type="button" class="edit-property-btn" data-target="<?= $propertyId ?>">Edit</button>
-                <button type="button" class="delete-property-btn" data-target="<?= $propertyId ?>">Delete</button>
+                <button type="button" class="edit-property-btn" data-target="<?= $propertyId ?>">Update property</button>
+                <button type="button" class="delete-property-btn" data-target="<?= $propertyId ?>">Delete property</button>
             </div>
+
 
         <?php } ?>
 

@@ -77,7 +77,8 @@ nav > div > a:hover {
 }
 
 #home > div > h3 {
-  font-size: 24px;
+  font-size: 38px;
+  font-weight: 600;
   color: #003049;
 }
 
@@ -85,6 +86,8 @@ nav > div > a:hover {
   margin: 0;
   background-color: #fcbf49;
   color: #003049;
+  position: relative;
+  left: -4px;
 }
 
 #btnSearch:hover {
@@ -102,8 +105,12 @@ nav > div > a:hover {
 }
 
 #results {
+  display: none;
   height: 150px;
-  width: 150px;
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  top: 145px;
 }
 #results > div > a {
   color: #003049;
@@ -112,6 +119,32 @@ nav > div > a:hover {
 
 /* ============================= */
 /* ============================= */
+
+/* SIGNUP PAGE */
+
+.signUp {
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.signUp > div > h2 {
+  text-align: center;
+  color: #003049;
+}
+
+.userSignUp,
+.agentSignUp {
+  display: grid;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 30px;
+}
 
 /* FORM LOGIN */
 
@@ -250,9 +283,15 @@ button:hover {
   margin: 10px;
 }
 
+.propertyDiv {
+  border-bottom: 1px solid #fcbf49;
+  /* display: grid; */
+  text-align: center;
+}
+
 .propertyDiv > img {
   object-fit: contain;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 .propertyRow > div:first-child {
@@ -260,7 +299,7 @@ button:hover {
 }
 .propertyRow {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #1a4262;
