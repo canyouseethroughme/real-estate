@@ -28,13 +28,13 @@ function sendActivationEmail($userId, $email, $activationKey, $isAgent)
         $mail->Port       = 587;                                    // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('stefan.test.andrei@gmail.com', 'ZILLOW REAL ESTATE ACTIVATION ACCOUNT');
+        $mail->setFrom('stefan.test.andrei@gmail.com', 'verify test');
         $mail->addAddress($email, 'Real Estate Test');     // Add a recipient
 
         // Content
         $mail->isHTML(true);
         $sPath = "http://127.0.0.1:8888/exam/user/api-activate-user-account.php?id=$userId&key=$activationKey&isAgent=$isAgent";                         // Set email format to HTML
-        $mail->Subject = 'Welcome to Zillow Real Estate - please activate your account';
+        $mail->Subject = 'Welcome to Real Estate - please activate your account';
         $mail->Body    = '<a href="' . $sPath . '"> Click here to activate your account</a>';
         // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

@@ -35,4 +35,54 @@ if ($_SESSION['jUser']->email) { ?>
 ?>
 
 <?php
+if ($_SESSION['jUser']->isAgent) :
+    ?>
+    <div id="propertyForm" style="margin-bottom: 50px;">
+        <form id="frmLogin">
+            <h2 class="uploadPropsLabel"> Upload properties</h2>
+            <h3 style="margin-bottom: 15px;">Use the form bellow to upload properties.</h3>
+            <label for=" priceInput"></label>
+            <input name="price" id="priceInput" type="text" placeholder="Property price" maxlength="9" data-type="integer" data-min="500000" data-max="999999999">
+            <label for="bedsInput"></label>
+            <input name="bedrooms" id="bedsInput" type="text" placeholder="Property no. of bedrooms" maxlength="3" data-type="integer" data-min="1" data-max="15">
+            <label for="bthInput"></label>
+            <input name="bathrooms" id="bthInput" type="text" placeholder="Property no. of bathrooms" maxlength="3" data-type="integer" data-min="1" data-max="10">
+            <label for="sqmInput"></label>
+            <input name="sqm" id="sqmInput" type="text" placeholder="Property sqm" maxlength="20" data-type="integer" data-min="40" data-max="9999">
+            <label for="imageInput"></label>
+            <input name="image" type="file" id="imageInput">
+            <button type="button" id="btnAddProperty">Upload property</button>
+
+        </form>
+    </div>
+
+    <div id="properties">
+        <?php
+            $sjData = file_get_contents(__DIR__ . '/data/data.json');
+            $jData = json_decode($sjData);
+            $jDataProperties = $jData->properties;
+
+            foreach ($jDataProperties as $propertyId => $property) {
+                ?>
+
+            <div id="<?= $propertyId ?>" class="newProperty">
+                <img src="<?= $property->imageUrl ?>">
+                <input name="image" type="file">
+                <input data-type="propertyPrice" type="text" value="<?= $property->price ?>">
+                <input data-type="propertyBeds" type="text" value="<?= $property->beds ?>">
+                <input data-type="propertyBth" type="text" value="<?= $property->bath ?>">
+                <input data-type="propertySqm" type="text" value="<?= $property->sqm ?>">
+                <button type="button" class="edit-property-btn" data-target="<?= $propertyId ?>">Edit</button>
+                <button type="button" class="delete-property-btn" data-target="<?= $propertyId ?>">Delete</button>
+            </div>
+
+        <?php } ?>
+
+    </div>
+
+<?php
+endif;
+?>
+
+<?php
 require_once(__DIR__ . '/components/bottom.php');

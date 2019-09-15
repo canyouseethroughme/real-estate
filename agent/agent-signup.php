@@ -50,6 +50,8 @@ if ($_POST) {
     $sjData = json_encode($jData, JSON_PRETTY_PRINT);
     file_put_contents(__DIR__ . '/../data/data.json', $sjData);
 
+    include('../user/api-send-activation-email.php');
+    sendActivationEmail($sAgentId, $sAgentEmail, $sAgentActivationKey, true);
+
     header('Location: ../login.php');
-    include('api-send-activation-email.php');
 }

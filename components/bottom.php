@@ -2,7 +2,6 @@
 <script>
     const sjProperties = '<?php echo json_encode($jProperties); ?>'
     ajProperties = JSON.parse(sjProperties) // convert text into an object
-    console.log(ajProperties)
 
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2FudGlhZ29kb25vc28iLCJhIjoiY2swYzVoYmNmMHlkZzNibzR4NTNxamU3cSJ9.QNJx-cfl48aSOx8purGNeA';
     var map = new mapboxgl.Map({
@@ -47,7 +46,7 @@
 <script src="scripts/script.js"></script>
 <script src="scripts/validate.js"></script>
 <script src="scripts/login.js"></script>
-<script src="scripts/signup.js"></script>
+
 </body>
 <div class="bottom">
     <h4>Tel: +45.45.45.45 -

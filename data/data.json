@@ -8,6 +8,54 @@
             "activationKey": "43191d26",
             "verified": 0,
             "id": "3889797b8cb15712d21329ca0420fbf6"
+        },
+        "c389f67e0043826529a41b9c37f2f290": {
+            "name": "Andrei",
+            "lastName": "Atudorei",
+            "password": "counter",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "2d651e45",
+            "verified": 0
+        },
+        "e5185ea1ec24918eae978168ba1b940a": {
+            "name": "Andrei",
+            "lastName": "Atudorei",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "32e5c8c4",
+            "verified": 0
+        },
+        "96b5823e9a6230e4f520148130109271": {
+            "name": "Andrei",
+            "lastName": "Atudorei",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "2e7d0cdd",
+            "verified": 0
+        },
+        "7a51d45195aa7e9b29f98c14d99ff8e7": {
+            "name": "Andreisssss",
+            "lastName": "Atudorei",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "a7f31a68",
+            "verified": 1
+        },
+        "8735a7c2f7045617caa6c2bee0468884": {
+            "name": "Christian",
+            "lastName": "Reeder",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "2a1f799b",
+            "verified": 1
+        },
+        "4e23108df92c1fb7d4798622df4191af": {
+            "name": "balu",
+            "lastName": "bala",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "activationKey": "20613060",
+            "verified": 1
         }
     },
     "agents": {
@@ -20,6 +68,43 @@
             "activationKey": "3360cf7b",
             "verified": 0,
             "id": "c0bd707e3a08dbe677f09d76db156f16"
+        },
+        "be8c62d0e373df669aa59a8c400958d0": {
+            "name": "Christian",
+            "lastName": "Reeder",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "phoneNumber": "84718257",
+            "activationKey": "4c6da5b7",
+            "verified": 0
+        },
+        "6bbab27604fdf4c4f6bcf5f11fd211e5": {
+            "name": "Christian",
+            "lastName": "Reeder",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "phoneNumber": "84718257",
+            "activationKey": "160ebd94",
+            "verified": 0
+        },
+        "901adc73f659a8685914f196ba9b93d7": {
+            "name": "Christian",
+            "lastName": "Reeder",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "phoneNumber": "84718257",
+            "activationKey": "0b60ae00",
+            "verified": 1
+        },
+        "3bc4059d9f6baa118b1cc778b5b5a6a4": {
+            "name": "Andrei",
+            "lastName": "Atudorei",
+            "password": "123456",
+            "email": "stefandrei123@gmail.com",
+            "phoneNumber": "52225585",
+            "activationKey": "7414a184",
+            "verified": 0
         }
-    }
+    },
+    "properties": {}
 }

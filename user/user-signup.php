@@ -29,25 +29,31 @@ $sUserActivationKey = bin2hex(random_bytes(4));
 $sUserVerified = 0;
 
 if ($_POST) {
-    $jUser = new stdClass();
-    $jUser->name = $sUserName;
-    $jUser->lastName = $sUserLastName;
-    $jUser->password = $sUserPassword;
-    $jUser->email = $sUserEmail;
-    $jUser->activationKey = $sUserActivationKey;
-    $jUser->verified = $sUserVerified;
-    $sUser = json_encode($jUser, JSON_PRETTY_PRINT);
+    try {
+        $jUser = new stdClass();
+        $jUser->name = $sUserName;
+        $jUser->lastName = $sUserLastName;
+        $jUser->password = $sUserPassword;
+        $jUser->email = $sUserEmail;
+        $jUser->activationKey = $sUserActivationKey;
+        $jUser->verified = $sUserVerified;
+        $sUser = json_encode($jUser, JSON_PRETTY_PRINT);
 
-    $sjData = file_get_contents(__DIR__ . '/../data/data.json');
-    $jData = json_decode($sjData);
+        $sjData = file_get_contents(__DIR__ . '/../data/data.json');
+        $jData = json_decode($sjData);
 
-    $sUserId = bin2hex(random_bytes(16));
-    $jData->users->$sUserId = $jUser;
+        $sUserId = bin2hex(random_bytes(16));
+        $jData->users->$sUserId = $jUser;
 
-    $sjData = json_encode($jData, JSON_PRETTY_PRINT);
+        $sjData = json_encode($jData, JSON_PRETTY_PRINT);
 
-    file_put_contents(__DIR__ . '/../data/data.json', $sjData);
+        file_put_contents(__DIR__ . '/../data/data.json', $sjData);
 
-    header('Location: ../login.php');
-    include('api-send-activation-email.php');
+        include('api-send-activation-email.php');
+        sendActivationEmail($sUserId, $sUserEmail, $sUserActivationKey, false);
+
+        header('Location: ../login.php');
+    } catch (Exception $e) {
+        echo $e;
+    }
 };

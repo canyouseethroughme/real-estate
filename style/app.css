@@ -35,7 +35,7 @@ nav > div > a > img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #1a4262;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -54,6 +54,13 @@ nav > div > a:hover {
 
 /* BODY */
 
+#home {
+  background-image: url("../home.png");
+  background-size: cover;
+  height: calc(100vh - 90px);
+  background-position: 50% 50%;
+}
+
 /* ============================= */
 /* ============================= */
 
@@ -67,7 +74,7 @@ nav > div > a:hover {
   align-items: center;
   justify-items: center;
 }
-
+#frmSearch,
 #frmLogin,
 .divUpdate,
 .profileDiv {
@@ -135,13 +142,16 @@ button:hover {
 /* ============================= */
 
 /* UPDATE LOGIN */
-
+.divUpdate {
+  margin-top: -50px;
+}
 .divUpdate > button:last-child {
   margin-top: 20px;
   border: 1px solid #a4031f;
   color: #a4031f;
   background-color: white;
 }
+
 .divUpdate > button:last-child:hover {
   background-color: #a4031f;
   color: white;
@@ -151,9 +161,7 @@ button:hover {
 /* ============================= */
 
 /* EDIT PROFILE */
-.profileDiv {
-  margin-bottom: 100px;
-}
+
 .profileDiv > h2 {
   font-family: "Poppins", sans-serif;
   color: #0274e3;
@@ -190,6 +198,61 @@ button:hover {
 /* ============================= */
 /* ============================= */
 
+/* UPLOAD PROPERTIES */
+
+.uploadPropsLabel {
+  font-family: "Poppins", sans-serif;
+  color: #0274e3;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#propertyForm > form > h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* ============================= */
+
+/* EDIT / DELETE PROPERTIES */
+
+#properties {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0 50px 0;
+  padding: 0 20px;
+  justify-items: center;
+}
+
+.newProperty {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+.newProperty > img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.delete-property-btn {
+  border: 1px solid #a4031f;
+  background-color: white;
+  color: #a4031f;
+  transition: 0.5s;
+}
+
+.delete-property-btn:hover {
+  background-color: #a4031f;
+  color: white;
+}
+
+/* ============================= */
+/* ============================= */
+
 /* FOOTER */
 
 .bottom {
@@ -201,9 +264,10 @@ button:hover {
   width: 100vw;
   height: 30px;
   border-top: 0.5px solid #bcbcbd;
+  background-color: white;
 }
 .bottom > h4 {
-  color: #0274e3;
+  color: #1a4262;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
