@@ -58,7 +58,9 @@ nav > div > a:hover {
 /* ============================= */
 
 /* FORM LOGIN */
-.divLogin {
+.divLogin,
+.containerUpdate,
+.containerProfile {
   width: 100%;
   height: calc(100vh - 90px);
   display: grid;
@@ -66,7 +68,9 @@ nav > div > a:hover {
   justify-items: center;
 }
 
-#frmLogin {
+#frmLogin,
+.divUpdate,
+.profileDiv {
   width: 100%;
   height: auto;
   display: grid;
@@ -75,12 +79,15 @@ nav > div > a:hover {
 }
 
 #frmLogin > div > label,
-#frmLogin > label {
+#frmLogin > label,
+.divUpdate > label {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-weight: 500;
 }
-#frmLogin > div > label > span {
+#frmLogin > div > label > span,
+.containerUpdate > label {
+  font-family: "Poppins", sans-serif;
   color: #0274e3;
   font-size: 28px;
   font-weight: 600;
@@ -97,11 +104,12 @@ input.error {
 }
 
 input {
-  width: 250px;
-  margin-bottom: 30px;
+  width: 350px;
+  margin-bottom: 40px;
   outline: none;
   border: none;
   border-bottom: 1px solid #0274e3;
+  font-size: 16px;
 }
 
 button {
@@ -122,6 +130,41 @@ button:hover {
   color: #0c459e;
   background-color: white;
   border: 1px solid #0c459e;
+}
+/* ============================= */
+/* ============================= */
+
+/* UPDATE LOGIN */
+
+.divUpdate > button:last-child {
+  margin-top: 20px;
+  border: 1px solid #a4031f;
+  color: #a4031f;
+  background-color: white;
+}
+.divUpdate > button:last-child:hover {
+  background-color: #a4031f;
+  color: white;
+}
+
+/* ============================= */
+/* ============================= */
+
+/* EDIT PROFILE */
+.profileDiv {
+  margin-bottom: 100px;
+}
+.profileDiv > h2 {
+  font-family: "Poppins", sans-serif;
+  color: #0274e3;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.profileDiv > h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* ============================= */
